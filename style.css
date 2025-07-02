@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: var(--cor-fundo);
+  background: red;
   color: var(--cor-texto);
   line-height: 1.6;
 }
