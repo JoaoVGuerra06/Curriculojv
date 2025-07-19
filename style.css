@@ -112,3 +112,28 @@ footer {
     padding: 16px;
   }
 }
+.foto-animada {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--cor-accento);
+  animation: girar 10s linear infinite;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.foto-animada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
