@@ -1,8 +1,8 @@
 :root {
-  --cor-fundo: #f5f5f5;
+  --cor-fundo: #fefefe;
   --cor-texto: #222;
   --cor-accento: #0077cc;
-  --cor-header: #222;
+  --cor-header: #111;
   --cor-clara: #fff;
 }
 
@@ -19,16 +19,28 @@ body {
   color: var(--cor-texto);
 }
 
+/* Nome fixo no canto superior esquerdo */
+.topo-nome {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--cor-clara);
+  z-index: 100;
+}
+
 header {
   background: var(--cor-header);
   color: var(--cor-clara);
-  padding: 120px 20px;
+  padding: 100px 20px 60px;
   text-align: center;
 }
 
-header h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header p {
@@ -38,12 +50,13 @@ header p {
 
 .container {
   padding: 60px 20px;
+  width: 90%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-section:not(:last-child) {
-  margin-bottom: 60px;
+section {
+  padding: 60px 0;
 }
 
 section h2 {
@@ -54,10 +67,9 @@ section h2 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
   gap: 20px;
 }
-
 .card {
   background: var(--cor-clara);
   border: 1px solid #e3e3e3;
@@ -65,7 +77,6 @@ section h2 {
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-
 .card h3 {
   margin-bottom: 8px;
   color: var(--cor-accento);
@@ -75,7 +86,6 @@ a {
   color: var(--cor-accento);
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
@@ -86,11 +96,10 @@ a:hover {
   color: var(--cor-clara);
   padding: 10px 20px;
   border-radius: 5px;
+  text-decoration: none;
   font-weight: 600;
   transition: background 0.3s;
-  margin-top: 10px;
 }
-
 .btn:hover {
   background: #005fa3;
 }
@@ -103,37 +112,42 @@ footer {
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 80px 20px;
-  }
-
-  .card {
-    padding: 16px;
-  }
-}
-.foto-animada {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto 40px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid var(--cor-accento);
-  animation: girar 10s linear infinite;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+/* Foto com círculo animado */
+.foto-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
 }
 
-.foto-animada img {
+.foto-perfil {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
+  position: relative;
+  z-index: 2;
+  border: 5px solid var(--cor-clara);
+}
+
+.circulo-animado {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  border: 3px solid var(--cor-accento);
+  animation: girar 8s linear infinite;
+  z-index: 1;
 }
 
 @keyframes girar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  header { padding: 80px 20px; }
+  .card { padding: 16px; }
 }
