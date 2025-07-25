@@ -138,9 +138,9 @@ footer {
   height: 176px;
   border-radius: 50%;
   background: conic-gradient(
-    #fefefe 0% 5%,
+    #111 0% 5%,
     #2E8B57 5% 15%,
-    #fefefe 15% 85%,
+    #111 15% 85%,
     #2E8B57 85% 100%
   );
   animation: girar 8s linear infinite;
