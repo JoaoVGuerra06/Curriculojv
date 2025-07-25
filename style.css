@@ -44,7 +44,7 @@ header {
 }
 
 header p {
-  color: #2E8B57;
+  color: #bbb;
   margin-top: 10px;
 }
 
@@ -62,7 +62,7 @@ section {
 section h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #111;
+  color: #2E8B57;
 }
 
 .cards {
