@@ -137,7 +137,12 @@ footer {
   width: 176px;
   height: 176px;
   border-radius: 50%;
-  border: 3px solid var(--cor-accento);
+  background: conic-gradient(
+    red 0% 25%,
+    blue 25% 50%,
+    green 50% 75%,
+    yellow 75% 100%
+  );
   animation: girar 8s linear infinite;
   z-index: 1;
 }
