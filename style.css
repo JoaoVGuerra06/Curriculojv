@@ -118,7 +118,7 @@ footer {
   width: 160px;
   height: 160px;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: -30px; /* Margem negativa para subir o container */
 }
 
 .foto-perfil {
@@ -133,20 +133,20 @@ footer {
 
 .circulo-animado {
   position: absolute;
-  top: -8px;
+  top: -20px; /* Aumentei o valor negativo para subir mais */
   left: -8px;
-  width: 332px;
-  height: 332px;
+  width: 176px; /* Volta ao tamanho original (160 + 8 + 8) */
+  height: 176px;
   border-radius: 50%;
   background: conic-gradient(
-    ##181c21 0% 5%,
+    #181c21 0% 5%,
     #2E8B57 5% 15%,
-    ##181c21 15% 40%,
+    #181c21 15% 40%,
     #2E8B57 40% 50%,
-    ##181c21 50% 75%,
+    #181c21 50% 75%,
     #2E8B57 75% 100%
-    
   );
+}
   animation: girar 8s linear infinite;
   z-index: 1;
 }
