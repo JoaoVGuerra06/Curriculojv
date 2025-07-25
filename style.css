@@ -115,9 +115,10 @@ footer {
 /* Foto com círculo animado */
 .foto-container {
   position: relative;
-  width: 260px;
-  height: 260px;
+  width: 160px;
+  height: 160px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .foto-perfil {
