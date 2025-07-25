@@ -118,7 +118,7 @@ footer {
   width: 160px;
   height: 160px;
   margin-bottom: 20px;
-  margin-top: -30px; /* Margem negativa para subir o container */
+  margin-top: -35px; /* Margem negativa para subir o container */
 }
 
 .foto-perfil {
@@ -146,7 +146,7 @@ footer {
     #181c21 50% 75%,
     #2E8B57 75% 100%
   );
-}
+
   animation: girar 8s linear infinite;
   z-index: 1;
 }
