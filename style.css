@@ -141,13 +141,7 @@ footer {
     #fefefe 0% 5%,
     #2E8B57 5% 15%,
     #fefefe 15% 35%,
-    #2E8B57 35% 40%,
-    #fefefe 40% 50%,
-    #2E8B57 50% 55%,
-    #fefefe 55% 75%,
-    #2E8B57 75% 80%,
-    #fefefe 80% 85%,
-    #2E8B57 85% 100%
+    white 85% 100%
   );
   animation: girar 8s linear infinite;
   z-index: 1;
