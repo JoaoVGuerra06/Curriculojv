@@ -140,8 +140,8 @@ footer {
   background: conic-gradient(
     #fefefe 0% 5%,
     #2E8B57 5% 15%,
-    #fefefe 15% 35%,
-    white 85% 100%
+    #fefefe 15% 85%,
+    #2E8B57 85% 100%
   );
   animation: girar 8s linear infinite;
   z-index: 1;
