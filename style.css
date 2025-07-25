@@ -115,8 +115,8 @@ footer {
 /* Foto com círculo animado */
 .foto-container {
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 20px;
 }
 
@@ -132,10 +132,10 @@ footer {
 
 .circulo-animado {
   position: absolute;
-  top: -8px;
-  left: -8px;
-  width: 176px;
-  height: 176px;
+  top: -16px;
+  left: -16px;
+  width: 332px;
+  height: 332px;
   border-radius: 50%;
   background: conic-gradient(
     ##181c21 0% 5%,
