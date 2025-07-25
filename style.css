@@ -1,8 +1,8 @@
 :root {
-  --cor-fundo: #fefefe;
+  --cor-fundo: ##181c21;
   --cor-texto: #222;
   --cor-accento: #2E8B57;
-  --cor-header: #111;
+  --cor-header: ##181c21;
   --cor-clara: #fff;
 }
 
@@ -138,11 +138,11 @@ footer {
   height: 176px;
   border-radius: 50%;
   background: conic-gradient(
-    #111 0% 5%,
+    ##181c21 0% 5%,
     #2E8B57 5% 15%,
-    #111 15% 40%,
+    ##181c21 15% 40%,
     #2E8B57 40% 50%,
-    #111 50% 75%,
+    ##181c21 50% 75%,
     #2E8B57 75% 100%
     
   );
