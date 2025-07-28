@@ -267,8 +267,8 @@ footer {
 .social-icon {
   width: 40px;
   height: 40px;
-  background: var(--cor-clara);
-  color: var(--cor-fundo);
+  background: black;
+  color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -279,8 +279,8 @@ footer {
 }
 
 .social-icon:hover {
-  background: var(--cor-accento);
-  color: var(--cor-clara);
+  background: black;
+  color: white;
 }
 
 @keyframes girar {
