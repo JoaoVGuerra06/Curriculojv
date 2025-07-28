@@ -264,14 +264,23 @@ footer {
   margin-top: 20px;
 }
 
-
 .social-icon {
-  background: #fff;  /* bolinha branca */
-  color: #000;       /* ícone preto */
+  width: 40px;
+  height: 40px;
+  background: var(--cor-clara);  /* branco */
+  color: var(--cor-fundo);       /* preto */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s, color 0.3s;
 }
+
 .social-icon:hover {
-  background: #2E8B57;  /* bolinha verde ao passar o mouse */
-  color: #fff;          /* ícone branco */
+  background: var(--cor-accento); /* verde */
+  color: var(--cor-clara);        /* branco */
 }
 
 @keyframes girar {
