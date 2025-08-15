@@ -46,6 +46,7 @@ header {
 header p {
   color: #bbb;
   margin-top: 10px;
+  text-align: center;
 }
 
 .container {
@@ -63,6 +64,7 @@ section h2 {
   margin-bottom: 10px;
   font-size: 2rem;
   color: #2E8B57;
+  text-align: center;
 }
 
 .cards {
@@ -99,6 +101,7 @@ a:hover {
   text-decoration: none;
   font-weight: 600;
   transition: background 0.3s;
+  text-align: center;
 }
 .btn:hover {
   background: #005fa3;
