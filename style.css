@@ -336,10 +336,11 @@ footer {
 .menu li {
   margin: 20px 0;
   text-align: center;
+  margin-top: 100px;
 }
 
 .menu a {
-  color: var(--cor-acento);
+  color: var(--cor-accento);
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s;
@@ -347,6 +348,13 @@ footer {
 
 .menu a:hover {
   color: #000;
+}
+
+.menu h2 {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: var(--cor-accento);
+  text-align: center;
 }
 
 /* Quando o menu está ativo */
