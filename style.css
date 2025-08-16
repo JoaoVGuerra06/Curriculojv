@@ -54,6 +54,7 @@ header p {
   width: 90%;
   max-width: 1000px;
   margin: auto;
+  text-align: center;
 }
 
 section {
@@ -71,6 +72,7 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
   gap: 20px;
+  text-align: center;
 }
 .card {
   background: var(--cor-clara);
@@ -107,6 +109,7 @@ a:hover {
 }
 .btn:hover {
   background: #005fa3;
+  
 }
 
 footer {
@@ -115,7 +118,7 @@ footer {
   text-align: center;
   padding: 1px 0;
   font-size: 0.9rem;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 /* Foto com círculo animado */
