@@ -5,7 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>João Vítor F Guerra</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
   <meta name="description" content="Currículo digital de João Vítor F. Guerra – Desenvolvedor, criador e visionário.">
 </head>
+<body>
+  <!-- Nome fixo no topo esquerdo -->
+  <div class="topo-nome">Joao.dev</div>
+  <div class="menu-toggle" id="menu-toggle">
+     <i class="fas fa-bars"></i>
+  </div>
+  <!-- Menu lateral oculto -->
+<nav class="menu" id="menu">
+  <h2>Joao.dev</h2>
+  <ul>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="projetos.html">Projetos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="Blue Simple Professional CV Resume.pdf.pdf" download>Currículo</a></li>
+  </ul>
+</nav>
+    
+
+ 
+
+  <section id="projetos">
+    <div class="container">
+      <h2>Projetos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Task‑Straight (Em andamento)</h3>
+          <p>Organizador pessoal completo para aumentar produtividade.</p>
+        </div>
+        <div class="card">
+          <h3>GeoMet.jl (Em andamento)</h3>
+          <p>Pacote em Julia para geoestatística e análise geográfica.</p>
+        </div>
+        <div class="card">
+          <h3>MineTower (Em andamento)</h3>
+          <p>Jogo estilo Tower defense desenvolvido em processing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container" style="text-align:center">
+      <h2>Contato</h2>
+      <p>Quer saber mais sobre meus trabalhos? Me encontre via Linkedin, github, instagram ou envie um email:</p>
+      <!-- <a class="btn" href="mailto:contato@joaovitor.dev">Enviar email</a> -->
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/JoaoVGuerra06" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/jo%C3%A3o-v%C3%ADtor-figueiredo-guerra-103699278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:joaovitorfguerra@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/jotavguerra" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+ 
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 João Vítor F Guerra. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+</body>
 
 </html>
