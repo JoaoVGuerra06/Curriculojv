@@ -44,7 +44,7 @@ header {
 }
 
 header p {
-  color: #181c21;
+  color: #bbb;
   margin-top: 10px;
   text-align: center;
 }
@@ -78,6 +78,11 @@ section h2 {
   max-width: 800px;       
   margin: 0 auto;       
   aspect-ratio: 3 / 1;   
+}
+.card p {
+  color: #bbb;
+  margin-top: 10px;
+  text-align: center;
 }
 .cards {
   display: grid;
